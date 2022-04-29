@@ -1,0 +1,36 @@
+body{
+    background-color: darkslateblue;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Travail sur la section */
+section{
+    width:50vh;
+    line-height: 5vh;
+    background-color: teal;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    border: solid 3px white;
+    border-radius: 20px;
+    padding: 1%;
+}
+
+table{
+    margin: auto;
+}
+
+tr{
+    height: 100px;
+}
+
+td{
+    width: 100px;
+    border:2px aquamarine solid;
+    text-align: center;
+    background-color: rgba(95, 158, 160,0.3);
+    color: darkcyan;
+    font-weight:bold;
+}
