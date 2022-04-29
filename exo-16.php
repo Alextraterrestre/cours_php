@@ -8,19 +8,30 @@
     <title> Ma deuxième page PHP </title>
     <link rel="stylesheet" href="css/main3.css">
 </head>
+
 <body>
+    <?php
+    $couleur = array('bleu', 'vert', 'orange', 'rose');
+    $cpt = 0;
 
-        <?php
-        for($i=0,$total=0;$i<=5;$total+=$i,$nombre[]=$i++);
-            echo implode('+',$nombre).'='.$total."<br/>";
+    /* Utilisation de continue*/
 
-        for($i=0;$i<=5;$i++){
-            $total+=$i;
-            $nombre[]=$i++;
-            echo $nombre[$i]."<br/>";
+    for($i=0;$i<count($couleur);$i++){
+        if ($couleur[$i]=='vert'){
+            continue;
         }
-        ?>
- 
+        echo($couleur[$i]. "<br/>");
+        $cpt++;
+    }
+    echo("<br/>");
+    for($i=0;$i<count($couleur);$i++){
+        if ($couleur[$i]=='vert'){
+            break;
+        }
+        echo($couleur[$i]. "<br/>");
+        $cpt++;
+    }
+    ?>
 </body>
 
 </html>
