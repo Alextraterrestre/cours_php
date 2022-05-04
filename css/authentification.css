@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-around;
+    width: 75%;
+    height: 50vh;
+    margin: auto;
+    background: #FF8C00;
+    /* fallback color if gradients are not supported*/
+    background: -webkit-repeating-linear-gradient(20deg, #FF8C00, #F0FFFF, #00BFFF);
+    background: -moz-repeating-linear-gradient(20deg, #FF8C00, #F0FFFF, #00BFFF);
+    background: -o-repeating-linear-gradient(20deg, #FF8C00, #F0FFFF, #00BFFF);
+    background: repeating-linear-gradient(20deg, #FF8C00, #F0FFFF, #00BFFF);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    margin: 10% 15%;
+    padding: 10% 15%;
+    border: whitesmoke 2px solid;
+    border-radius: 20px;
+}
+
+legend{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 2em;
+    padding-bottom: 20%;
+}
+input{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+input:nth-last-child(1), input:nth-last-child(2){
+    width: 100px;
+    height: 25px;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}

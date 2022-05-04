@@ -7,6 +7,7 @@
 
 html {
     font-size: 62.5%;
+    font-size: 2em;
 }
 body {
     background: linear-gradient(336deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
@@ -15,8 +16,11 @@ body {
 }
 
 section {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     width: 75%;
-    height: auto;
+    height: 75vh;
     margin: auto;
     margin-top: 2%;
     box-shadow: 12px 29px 81px 0px rgba(255, 255, 255, 0.75);
@@ -27,21 +31,15 @@ section {
     border-radius: 50px;
 }
 
-h1 {
-    font-size: 3rem;
-    margin: 3% 15%;
-}
-
 form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    height: auto;
+    width: 75%;
+    height: 75%;
     margin: auto;
     margin-top: 2%;
     border-radius: 15px;
     border: 2px whitesmoke solid;
     background-color: rgba(255, 255, 255,0.3);
+    text-align: center;
     
 }
 label{
@@ -49,13 +47,15 @@ label{
     text-align: justify;
     padding: 5%;
     letter-spacing: 3px;
+    font-size: 1rem;
 }
 
 input {
-    width: 75%;
-    margin: 1% 13%;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
 }
-form:nth-of-type(1) input:nth-last-child(1){
+forminput:nth-last-child(1){
     border-radius: 5px;
     border: none;
     background-color: whitesmoke;
@@ -75,16 +75,18 @@ form:nth-of-type(1) input:nth-last-child(1):active{
     cursor: pointer;
 }
 
-table {
+div {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 75%;
+    height: 75vh;
     margin: auto;
-}
-td {
-    height: 35px;
-    width: 150px;
-    border: 2px solid whitesmoke;
-    border-radius: 5px;
-    text-align: center;
-    vertical-align: middle;
-    background-color: rgba(255, 255, 255,0.3);
-    color: #f0ffff;
+    margin-top: 2%;
+    box-shadow: 12px 29px 81px 0px rgba(255, 255, 255, 0.75);
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    font-size: 1.8rem;
+    border-radius: 50px;
 }
