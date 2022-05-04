@@ -11,7 +11,7 @@
     <?php
 
 
-    $villes=array('v'=>'Valence','p'=>'Portes-lès-Valences','b'=>'Bourg-les-Valences','n'=>'Venise','i'=>'Baléares','m'=>'Madère'));
+    $villes=array('v'=>'Valence','p'=>'Portes-lès-Valences','b'=>'Bourg-les-Valences','n'=>'Venise','i'=>'Baléares','m'=>'Madère');
         foreach($villes as $indice=>$valeur){
             echo $indice."=>".$valeur."<br/>";
         };
