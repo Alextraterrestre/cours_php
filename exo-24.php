@@ -11,10 +11,10 @@
     <?php
 
 
-    $villes=array('Drôme'=>'Valence','Portes-lès-Valences','Bourg-les-Valences','Romantique'=>array('Venise','Baléares','Madère'));
+    $villes=array('v'=>'Valence','p'=>'Portes-lès-Valences','b'=>'Bourg-les-Valences','n'=>'Venise','i'=>'Baléares','m'=>'Madère'));
         foreach($villes as $indice=>$valeur){
-            echo$valeur."<br/>"
-        }
+            echo $indice."=>".$valeur."<br/>";
+        };
     ?>
 </body>
 </html>
