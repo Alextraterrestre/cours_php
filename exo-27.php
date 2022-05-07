@@ -27,7 +27,15 @@
     </table>
     <?php
 // j'ai un champ "valeure début" et un champ "valeur de fin" => faire une boucle pour afficher les valeur entre chacunes des champs
-        
+    if(isset($_POST['envoyer'])){
+        $debut=$_POST['debut'];
+        $fin=$_POST['fin'];
+
+        while($debut<=$fin){
+            echo"<td>" .$debut. "</td>";
+            $debut++; 
+        }
+    }
 
     ?>
 </body>

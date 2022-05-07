@@ -21,7 +21,21 @@
                 <input type="submit" value="Valider" />
                 <input type="reset" value="Annuler" />
             </div>
-
+            <?php
+    if(isset($_POST["envoyer"])){
+        $login="jedi";
+        $mdp="toor";
+        echo ('bravo!'.$login. 'super'.$mdp);
+    }
+    while($login=false)($mdp=false);{
+        echo ("Vous n'avez pas saisi les bons identifants");
+    
+      do{
+        $login=true && $mdp=true;
+        echo ("Vous avez saisi les bons identifants");
+     }
+};
+?>
             <!-- Création de retour lors de la page authentification 
                 <button onClick="history.back()"> Retour </button> 
             -->
@@ -30,8 +44,3 @@
     </section>
 </body>
 </html>
-<?php
-// if(isset($_POST["envoyer"])){
-//     if($_POST['login']) =="jedi") && ($_POST['password'])
-// }
-?>

@@ -41,7 +41,6 @@
                 $colonne=1;
             }
             echo("</table>");
- 
         ?>
     </p>
 </body>
